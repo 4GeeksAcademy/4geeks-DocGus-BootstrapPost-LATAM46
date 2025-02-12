@@ -6,6 +6,7 @@
   <title>Instagram Style Navbar</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -21,7 +22,18 @@
       <!-- Right Side Buttons -->
       <div class="d-flex align-items-center">
         <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#createPostModal">Create a new post</button>
-        <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
@@ -30,10 +42,14 @@
   <div class="container mt-4 text-center">
     <ul class="nav nav-pills justify-content-center">
       <li class="nav-item">
-        <a class="nav-link active" id="columna-btn" data-bs-toggle="pill" href="#columnView">Columna</a>
+        <a class="nav-link active" id="columna-btn" data-bs-toggle="pill" href="#columnView">
+          <i class="fa-solid fa-square"></i>
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="cuadricula-btn" data-bs-toggle="pill" href="#gridView">Cuadrícula</a>
+        <a class="nav-link" id="cuadricula-btn" data-bs-toggle="pill" href="#gridView">
+          <i class="fa-solid fa-table"></i>
+        </a>
       </li>
     </ul>
   </div>
@@ -47,73 +63,118 @@
         <div class="row">
           <div class="col-12 mb-4">
             <div class="card">
+              <div class="card-header bg-white d-flex justify-content-between">
+                <h3>My Post</h3>
+                <span>11/02</span>
+              </div>
               <img src="https://media.istockphoto.com/id/1456109827/photo/man-is-giving-helping-hand-silhouettes-of-people-climbing-on-mountain-at-sunset-help-and.jpg?s=1024x1024&w=is&k=20&c=8BWqnZJaM6p4eP2PtGQ_55Vk7r7smqK2Z8osD01_HW4=" class="card-img-top" alt="Postal 1">
               <div class="card-body">
-                <p class="card-text">Caption for Postal 1</p>
+                <p class="card-text"><b>likes 125</b></p>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis unde minus beatae adipisci nobis cumque vitae vero molestiae illo modi!</p>
               </div>
             </div>
           </div>
           <div class="col-12 mb-4">
             <div class="card">
+              <div class="card-header bg-white d-flex justify-content-between">
+                <h3>My Post</h3>
+                <span>11/02</span>
+              </div>
               <img src="https://images.unsplash.com/photo-1682685796014-2f342188a635?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 2">
               <div class="card-body">
-                <p class="card-text">Caption for Postal 2</p>
+                <p class="card-text"><b>likes 125</b></p>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis unde minus beatae adipisci nobis cumque vitae vero molestiae illo modi!</p>
               </div>
             </div>
           </div>
           <div class="col-12 mb-4">
             <div class="card">
+              <div class="card-header bg-white d-flex justify-content-between">
+                <h3>My Post</h3>
+                <span>11/02</span>
+              </div>
               <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 3">
               <div class="card-body">
-                <p class="card-text">Caption for Postal 3</p>
+                <p class="card-text"><b>likes 125</b></p>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis unde minus beatae adipisci nobis cumque vitae vero molestiae illo modi!</p>
               </div>
             </div>
           </div>
           <div class="col-12 mb-4">
             <div class="card">
+              <div class="card-header bg-white d-flex justify-content-between">
+                <h3>My Post</h3>
+                <span>11/02</span>
+              </div>
               <img src="https://images.unsplash.com/photo-1682695796954-bad0d0f59ff1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 4">
               <div class="card-body">
-                <p class="card-text">Caption for Postal 4</p>
+                <p class="card-text"><b>likes 125</b></p>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis unde minus beatae adipisci nobis cumque vitae vero molestiae illo modi!</p>
               </div>
             </div>
           </div>
           <div class="col-12 mb-4">
             <div class="card">
+              <div class="card-header bg-white d-flex justify-content-between">
+                <h3>My Post</h3>
+                <span>11/02</span>
+              </div>
               <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 5">
               <div class="card-body">
-                <p class="card-text">Caption for Postal 5</p>
+                <p class="card-text"><b>likes 125</b></p>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis unde minus beatae adipisci nobis cumque vitae vero molestiae illo modi!</p>
               </div>
             </div>
           </div>
           <div class="col-12 mb-4">
             <div class="card">
+              <div class="card-header bg-white d-flex justify-content-between">
+                <h3>My Post</h3>
+                <span>11/02</span>
+              </div>
               <img src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 6">
               <div class="card-body">
-                <p class="card-text">Caption for Postal 6</p>
+                <p class="card-text"><b>likes 125</b></p>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis unde minus beatae adipisci nobis cumque vitae vero molestiae illo modi!</p>
               </div>
             </div>
           </div>
           <div class="col-12 mb-4">
             <div class="card">
+              <div class="card-header bg-white d-flex justify-content-between">
+                <h3>My Post</h3>
+                <span>11/02</span>
+              </div>
               <img src="https://images.unsplash.com/photo-1682695796954-bad0d0f59ff1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 7">
               <div class="card-body">
-                <p class="card-text">Caption for Postal 7</p>
+                <p class="card-text"><b>likes 125</b></p>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis unde minus beatae adipisci nobis cumque vitae vero molestiae illo modi!</p>
               </div>
             </div>
           </div>
           <div class="col-12 mb-4">
             <div class="card">
+              <div class="card-header bg-white d-flex justify-content-between">
+                <h3>My Post</h3>
+                <span>11/02</span>
+              </div>
               <img src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 8">
               <div class="card-body">
-                <p class="card-text">Caption for Postal 8</p>
+                <p class="card-text"><b>likes 125</b></p>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis unde minus beatae adipisci nobis cumque vitae vero molestiae illo modi!</p>
               </div>
             </div>
           </div>
           <div class="col-12 mb-4">
             <div class="card">
+              <div class="card-header bg-white d-flex justify-content-between">
+                <h3>My Post</h3>
+                <span>11/02</span>
+              </div>
               <img src="https://images.unsplash.com/photo-1682685796014-2f342188a635?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 9">
               <div class="card-body">
-                <p class="card-text">Caption for Postal 9</p>
+                <p class="card-text"><b>likes 125</b></p>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis unde minus beatae adipisci nobis cumque vitae vero molestiae illo modi!</p>
               </div>
             </div>
           </div>
@@ -125,76 +186,41 @@
         <!-- 9 postales en cuadrícula -->
         <div class="row">
           <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="https://media.istockphoto.com/id/1456109827/photo/man-is-giving-helping-hand-silhouettes-of-people-climbing-on-mountain-at-sunset-help-and.jpg?s=1024x1024&w=is&k=20&c=8BWqnZJaM6p4eP2PtGQ_55Vk7r7smqK2Z8osD01_HW4=" class="card-img-top" alt="Postal 1">
-              <div class="card-body">
-                <p class="card-text">Caption for Postal 1</p>
-              </div>
-            </div>
+            <img width="100%" height="100%" src="https://media.istockphoto.com/id/1456109827/photo/man-is-giving-helping-hand-silhouettes-of-people-climbing-on-mountain-at-sunset-help-and.jpg?s=1024x1024&w=is&k=20&c=8BWqnZJaM6p4eP2PtGQ_55Vk7r7smqK2Z8osD01_HW4=" class="card-img-top" alt="Postal 1">
+
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="https://images.unsplash.com/photo-1682685796014-2f342188a635?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 2">
-              <div class="card-body">
-                <p class="card-text">Caption for Postal 2</p>
-              </div>
-            </div>
+          
+              <img width="100%" height="100%" src="https://images.unsplash.com/photo-1682685796014-2f342188a635?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 2">
+            
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 3">
-              <div class="card-body">
-                <p class="card-text">Caption for Postal 3</p>
-              </div>
-            </div>
+            <img width="100%" height="100%" src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 3">
+
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="https://images.unsplash.com/photo-1682695796954-bad0d0f59ff1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 4">
-              <div class="card-body">
-                <p class="card-text">Caption for Postal 4</p>
-              </div>
-            </div>
+            <img width="100%" height="100%" src="https://images.unsplash.com/photo-1682695796954-bad0d0f59ff1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 4">
+
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 5">
-              <div class="card-body">
-                <p class="card-text">Caption for Postal 5</p>
-              </div>
-            </div>
+            <img width="100%" height="100%" src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 5">
+
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 6">
-              <div class="card-body">
-                <p class="card-text">Caption for Postal 6</p>
-              </div>
-            </div>
+            <img width="100%" height="100%" src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 6">
+
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="https://images.unsplash.com/photo-1682695796954-bad0d0f59ff1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 7">
-              <div class="card-body">
-                <p class="card-text">Caption for Postal 7</p>
-              </div>
-            </div>
+            <img width="100%" height="100%" src="https://images.unsplash.com/photo-1682695796954-bad0d0f59ff1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 7">
+
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 8">
-              <div class="card-body">
-                <p class="card-text">Caption for Postal 8</p>
-              </div>
-            </div>
+            <img width="100%" height="100%" src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 8">
+
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="https://images.unsplash.com/photo-1682685796014-2f342188a635?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 9">
-              <div class="card-body">
-                <p class="card-text">Caption for Postal 9</p>
-              </div>
-            </div>
+            <img width="100%" height="100%" src="https://images.unsplash.com/photo-1682685796014-2f342188a635?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Postal 9">
+
           </div>
         </div>
       </div>
@@ -210,7 +236,14 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <input type="file" class="form-control" accept="image/*">
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="d-flex">
+            <button class="btn border"><i class="fa-solid fa-camera"></i></button>
+            <button class="btn border ms-2"><i class="fa-solid fa-location-dot"></i></button>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
